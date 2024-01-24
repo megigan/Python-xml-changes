@@ -1,5 +1,27 @@
 >>> import os
+
+// show username
 >>> os.environ["USERPROFILE"]
 'C:\Users\ShiftyByte'
->>> os.path.join(os.environ["USERPROFILE"], "Desktop")
+
+
+// join the directory
+>>> os.path.join(os.environ["USERPROFILE"], "full path here")
 'C:\Users\ShiftyByte\Desktop'
+
+
+//below to show listed directories
+os.path.join(os.environ["USERPROFILE"], "full path here")
+
+//save path in variable and print
+current_working_directory = os.path.join(os.environ["USERPROFILE"], "full path here")
+print(current_working_directory)
+
+
+
+//Set path to run py files
+setx path "%path%;C:\path\to\util.py"
+
+
+//Run from Windows cmd directly
+C:\Users\user.name\Desktop\Network Docs\Python scripts>hello.py
