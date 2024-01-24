@@ -1,0 +1,5 @@
+>>> import os
+>>> os.environ["USERPROFILE"]
+'C:\Users\ShiftyByte'
+>>> os.path.join(os.environ["USERPROFILE"], "Desktop")
+'C:\Users\ShiftyByte\Desktop'
